@@ -1,0 +1,271 @@
+<!-- BOOTSTRAP CSS -->
+                    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous"> 
+
+                    <!-- HITPUB CSS -->
+                    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700,700i" rel="stylesheet">
+                    <style id="hitpub_css">
+                        /***********************************************
+                        MOSAIC BOOSTRAP OVERWRITE
+                        ***********************************************/
+                        #hitinfo .card {
+                            border-radius: 0;
+                        }
+                        
+                         #hitinfo button.btn-link {
+                            color: #fff;
+                            text-decoration: none;
+                         }
+                        #hitinfo button.btn-link:hover {
+                            text-decoration: none;
+                        }
+                        #hit ul.question-choice {
+                            list-style-type: none;
+                        }
+                        
+                        /***********************************************
+                        MOSAIC GENERAL STYLING
+                        ***********************************************/
+                        body {
+                            font-family: "Open Sans", "Roboto", sans-serif;
+                            line-height: 1.25;
+                        }
+                        textarea#feedback {
+                            width: 100%
+                        }
+                        input#submitButton {
+                            margin: auto;
+                            display: block;
+                            background-color: #2172a4;
+                            color: #fff;
+                            font-size: 1.125rem;
+                            padding: .5rem 1rem;
+                            cursor: pointer;
+                            border-radius: 1rem;
+                        }
+                        input#submitButton:hover {
+                            background-color: #06486F;
+                        }
+                        
+                        input[type="radio"] {
+                            cursor: pointer;
+                        }
+                        
+                        div.question {
+                            border-bottom: solid 1px #ccc;
+                            padding: 1rem 0;
+                        }
+                        
+                        /***********************************************
+                        HIT CUSTOM GENERAL STYLING
+                        ***********************************************/
+                        div.card-header {
+                            background-color: #06486F;
+                        }
+                        div.card-header h5 {
+                            color: #fff !important;
+                        }
+                        
+                        li {
+                            margin: .5em 0;
+                        }
+                        
+                        label[for="1"]:hover, label[for="1"].active {
+                            background-color: #2393FF !important;
+                        }
+                        label[for="2"]:hover, label[for="2"].active {
+                            background-color: #0f67ba !important;
+                        }
+                        label[for="3"]:hover, label[for="3"].active {
+                            background-color: #0f67ba !important;
+                        }
+                        label[for="all"]:hover, label[for="all"].active {
+                            background-color: #009300 !important;
+                        }
+                        label[for="neither"]:hover, label[for="neither"].active {
+                            background-color:  #e30000 !important;
+                        }
+                        
+                        label[for="1"]:before, label[for="1"]:before {
+                            content:"Generation #1 is better";
+                            white-space: pre;
+                        }
+                        label[for="2"]:before, label[for="2"]:before {
+                            content:"Generation #2 is better" ;
+                        }
+                        label[for="3"]:before, label[for="3"]:before {
+                            content:"Generation #3 is better";
+                            white-space: pre;
+                        }
+                        
+                        label[for="neither"]:before, label[for="neither"]:before {
+                            content:"Equally Bad";
+                            white-space: pre;
+                        }
+                        label[for="all"]:before, label[for="all"]:before {
+                            content:"Equally Good";
+                        }
+                        
+                        .story-title {
+                            margin:3px;
+                            background-color: white;
+                            padding-top:25px;
+                            padding-bottom:25px;
+                            text-align: center;
+                            color: #333;
+                        }
+                        
+                        .story {
+                            border:1px solid #ccc;
+                            margin:3px;
+                            text-align: left;
+                            padding:5px;
+                            padding-left:10px;
+                        }
+                        
+                        
+                        .beginning-title{
+                            border: 1px solid darkred;
+                            color: darkred;
+                        }
+                        
+                        .ending-title{
+                            border: 1px solid red;
+                            color: red;
+                        }
+                        
+                        
+                        .gray-out{
+                            background-color:#eee;
+                            color:white;
+                            border: 1px solid #eee;
+                        }
+                        
+                        
+                        .middle-1-title {
+                            background-color: #1E90FF;
+                            border: 2px double #2393FF;
+                            color:white;
+                        }
+                        
+                        .middle-2-title {
+                            background-color: #0f67ba;
+                            border: 2px double #0f67ba;
+                            color:white;
+                        }
+
+                        .middle-3-title {
+                            background-color: #48647F;
+                            border: 2px double #48647F;
+                            color:white;
+                        }
+                        
+                        .middle-sentence{
+                            color:#0f67cc;
+                        }
+                        
+                        .middle-sentence-1{
+                            color:#2393FF;
+                        }
+                        
+                        .middle-sentence-2{
+                            color:#0f67ba;
+                        }
+
+                        .middle-sentence-3{
+                            color:#48647F;
+                        }
+                        
+                        
+                        .beginning-sentence{
+                            border: 1px solid darkred;
+                            padding:1px 3px 1px 2px;
+                            color: darkred;
+                        }
+                        
+                        .ending-sentence{
+                            border: 1px solid red;
+                            padding:1px 3px 1px 2px;
+                            color: red;
+                        }
+                        
+                        .key-term {
+                            font-weight:bold;
+                            font-style:italic;
+                        }
+                        
+                        .question-choice-container {
+                            padding-top:2em;
+                            border-top:1px solid #eee;
+                        }
+                        
+                        .question-choice-container label.btn {
+                            background-color: #eee;
+                            border: none;
+                            margin-left: 1 !important;
+                            color: black;
+                            font-size:95%;
+                            margin-bottom: 10px;
+                        }
+                        
+                        .question-choice-container label.btn:hover {
+                            color: white;
+                            font-size:95%;
+                        
+                        }
+                        
+                        .example-choice-container label.btn {
+                            background-color: #ddd;
+                            border: 0;
+                            margin-left: 0 !important;
+                            color: black;
+                            font-size:95%;
+                        }
+                        
+                        .example-card {
+                            margin-top: 3em;
+                        }
+                        
+                        .legend {
+                            margin-top: .33rem;
+                            font-weight: normal;
+                            padding-left: 40px;
+                        }
+                        .legend .label{
+                            font-style: italic;
+                        }
+                        
+                        .emphasize {
+                            font-weight: bold;
+                            color: black;
+                        }
+                        
+                        .obj-emph {
+                            font-weight: bold;
+                            color: blue;
+                        }
+                        
+                        .use-emph{
+                            font-weight: bold;
+                            color: green;
+                        }
+                        
+                        .example {
+                            pointer-events:none;
+                            font-size:90%;
+                        }
+                        
+                        .goal {
+                            border-radius: .25rem;
+                            padding: 0.5rem 0.5rem;
+                            color: white;
+                            background-color: #555;
+                            transform: translateY(-20%);
+                        }
+                        
+                        @media (max-width:460px){
+                          body{
+                            display: none;
+                          }
+                        }
+
+                    </style>
